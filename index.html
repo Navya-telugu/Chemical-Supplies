@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List of Chemical Supplies</title>
+    <!-- Include Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="container-items">
+            <!-- Flexbox container for title and icons -->
+            <div class="header">
+                <h4>Chemical Supplies</h4>
+                <div class="icons">
+                    <button class="plus-icon"><i class="fas fa-plus"></i></button>
+                    <button class="blue-icons" id="sortAsc"><i class="fas fa-arrow-up"></i></button>
+                    <button class="blue-icons" id="sortDesc"><i class="fas fa-arrow-down"></i></button>
+                    <button class="red-icon" id="deleteSelected"><i class="fas fa-trash"></i></button>
+                    <button class="blue-icons" id="refresh"><i class="fas fa-sync"></i></button>
+                    <button class="blue-icons" id="print"><i class="fas fa-print"></i></button>
+                </div>
+            </div>
+            <div class="table-field">
+                <table id="chemicalTable" style="width: 100%; border-collapse: collapse;" border="3">
+                    <thead>
+                        <tr>
+                            <th>Tick Icon</th>
+                            <th>S.NO</th>
+                            <th>Chemical Name</th>
+                            <th>Vendor</th>
+                            <th>Density</th>
+                            <th>Viscosity</th>
+                            <th>Packaging</th>
+                            <th>Pack size</th>
+                            <th>Unit</th>
+                            <th>Quantity</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-id="1">
+                            <td>✓</td>
+                            <td>1</td>
+                            <td>Acetone</td>
+                            <td>XYZ Chemicals</td>
+                            <td>0.79 g/cm³</td>
+                            <td>0.32 cP</td>
+                            <td>Bottle</td>
+                            <td>500</td>
+                            <td>ml</td>
+                            <td>10</td>
+                            <td><button class="edit-icon"><i class="fas fa-edit"></i></button></td>
+                        </tr>
+                        <tr data-id="2">
+                            <td>✓</td>
+                            <td>2</td>
+                            <td>Benzene</td>
+                            <td>ABC Corp</td>
+                            <td>0.876 g/cm³</td>
+                            <td>0.65 cP</td>
+                            <td>Bottle</td>
+                            <td>1</td>
+                            <td>L</td>
+                            <td>5</td>
+                            <td><button class="edit-icon"><i class="fas fa-edit"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
